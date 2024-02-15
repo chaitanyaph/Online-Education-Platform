@@ -1,0 +1,758 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+/******************************** nav bar start *********************************/
+
+.navdiv{
+    height: 5rem;
+    width: 99%;
+    display: flex;
+    background-color: rgb(251, 251, 251);
+    box-shadow: 0.5px 0.5px 30px 1px lightblue;
+    box-sizing: content-box;
+    background-image: linear-gradient(to right, rgba(107, 197, 222, 0.074),rgba(159, 211, 225, 0.189), rgba(181, 216, 224, 0.079) );
+    position: fixed;
+    z-index: 999;
+    justify-content: space-evenly;
+}
+
+.logoandbrand{
+    height: 5rem;
+    width: 30rem;
+    display: flex;
+}
+
+.logo{
+    height: 5rem;
+    width: 10rem;
+    margin-left: 5rem;
+}
+
+.logo>a>img{
+    height: 5rem;
+    width: 6rem;
+    margin-left: 2rem;
+}
+
+.brandname>a{
+    height: 5rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+#sectext{
+    color: rgb(96, 109, 255);
+}
+
+.links>ul{
+    height: 5rem;
+    width: 50rem;
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+    align-items: center;
+    font-weight: 540;
+    font-size: large;
+    justify-content: center;
+}
+
+.links>ul>li>a:hover{
+    color: rgb(61, 75, 237);
+    text-shadow: 0.5px 0.5px 0.5px rgb(202, 185, 216);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logindiv{
+    height: 5rem;
+    width: 19rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button{
+    height: 2.7rem;
+    width: 6.5rem;
+    background-color: rgb(96, 109, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12%;
+    font-weight: 600;
+    cursor: pointer;
+    justify-content: space-evenly;
+    border: 2px solid rgba(0, 0, 255, 0.136);
+}
+
+.button:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: 2px 3px 8px rgb(129, 179, 235);
+}
+
+.button{
+    color: aliceblue;
+}
+
+#signup{
+    width: 6.5rem;   
+}
+
+/******************************** nav bar end *********************************/
+
+
+/******************************** home section start **************************/
+
+.homesec{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin-top: 5rem;
+    background-image: linear-gradient(to right, rgba(107, 197, 222, 0.074),rgba(159, 211, 225, 0.189), rgba(181, 216, 224, 0.079),white , white );
+}
+
+.hero-section-left{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-left: 2rem;
+    box-sizing: content-box;
+    margin-top: 3rem;
+}
+
+#herosubh{
+    color: rgb(96, 109, 255);
+}
+
+.herosub{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(83, 82, 82);
+    text-transform: capitalize;
+}
+
+.hero-section-heading{
+    font-size: 45px;
+    font-weight: 900;
+    color: rgb(83, 82, 82);
+    text-transform: capitalize;
+}
+
+.hero-section-sub-heading{
+    font-size: 35px;
+    line-height: 1px;
+    height: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.role{
+    color: rgb(96, 109, 255);
+    font-weight: 900;
+    font-size: 35px;
+    margin-left: 0.5rem;
+}
+
+.hero-section-description{
+    margin-top: 0.8rem;
+    width: 80%;
+    height: 10%;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(51, 49, 49);
+}
+
+.herosecbtn{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    gap: 3%;
+}
+
+.button-2{
+    height: 3rem;
+    width: 10rem;
+    background-color: rgb(96, 109, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    justify-content: space-evenly;
+    border: 2px solid rgba(0, 0, 255, 0.136);
+    margin-top: 1.5rem;
+}
+
+.button-2>a{
+    color: whitesmoke;
+}
+
+.button-2:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: 2px 3px 8px rgb(129, 179, 235);
+}
+
+#watchbtn{
+    background-color: white;
+    border: 1px solid rgb(142, 142, 200);
+}
+
+#watchbtn>a{
+    color: black;
+}
+
+.home-rightimg{
+    height: 100%;
+    width: 65%;
+}
+
+.home-rightimg>img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    padding-bottom: 4rem;
+    padding-right: 3rem;
+}
+
+/******************************** home section end ****************************/
+
+
+/********************************* card section start *********************************/
+
+.cardsec{
+    height: 90vh;
+    width: 100vw;
+    background-image: linear-gradient(to left, rgba(107, 197, 222, 0.074),rgba(159, 211, 225, 0.189), rgba(181, 216, 224, 0.079));
+}
+
+.cardinfo{
+    height: 10%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cardheading{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(96, 109, 255);
+    padding-top: 1rem;
+}
+
+.cardsubheading{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.cardcontainer{
+    height: 90%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.card{
+    height: 49%;
+    width: 27%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding:1rem;
+    box-shadow: rgba(81, 87, 87, 0.400) 0px 5px 15px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.cardcont{
+    text-align: center;
+    color: rgb(83, 82, 82);
+}
+
+.cdiv1{
+    border-bottom: 5px solid rgb(141, 214, 174);
+    border-radius: 2%;
+}
+
+.cdiv2{
+    border-bottom: 5px solid rgb(230, 179, 172);
+    border-radius: 2%;
+}
+
+.cdiv3{
+    border-bottom: 5px solid rgb(154, 185, 226);
+    border-radius: 2%;
+}
+
+.cdiv4{
+    border-bottom: 5px solid rgb(134, 179, 183);
+    border-radius: 2%;
+}
+
+.cdiv5{
+    border-bottom: 5px solid rgb(183, 214, 219);
+    border-radius: 2%;
+}
+
+.cdiv6{
+    border-bottom: 5px solid rgb(241, 195, 173);
+    border-radius: 2%;
+}
+
+
+/********************************* card section end *********************************/
+
+
+/******************************** courses section start **************************/
+
+.subheading{
+    height: 5rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgba(66, 133, 152, 0.074),rgba(159, 211, 225, 0.189), rgba(181, 216, 224, 0.079),white , white );
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(105, 117, 252);
+    text-shadow: 1px 1px 2px #adb7cb;
+    letter-spacing: 1.5px;
+}
+
+.courses{
+    height: 120vh;
+    width: 100vw;
+    padding-top: 5rem;
+    background-image: linear-gradient(to left, rgba(107, 197, 222, 0.074),rgba(159, 211, 225, 0.189), rgba(181, 216, 224, 0.079));
+}
+
+.coursecardcontainer{
+    height: 89.5%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards {
+    margin: 15px;
+    width: 20%;
+    height: 100%; 
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(81, 87, 87, 0.400) 0px 5px 15px;
+    transition: transform 0.3s ease;
+}
+
+.cards:hover{
+    
+    transform: scale(1.05); 
+}
+
+.course-image {
+    width: 100%;
+    max-height: 150px; 
+    object-fit: cover;
+}
+.course-heading {
+    margin-top: 0.7rem;
+    font-size: large;
+    font-weight: 600;
+}
+.course-description {
+    margin-top: 0.2rem;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.644);
+    text-align: center;
+    color: rgb(83, 82, 82);
+}
+.course-price{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 0.4rem;
+}
+.apply-button {
+    background-color: #25ca2b;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 0.3rem;
+}
+
+/******************************** courses section end ****************************/
+
+/******************************** about us start********************************/
+
+.aboutus{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 5rem;
+    /* background-image: linear-gradient(to right, rgba(107, 197, 222, 0.074),rgba(159, 211, 225, 0.189),white,white , white ); */
+}
+
+.aboutcontainer{
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, rgba(107, 197, 222, 0.074),rgba(159, 211, 225, 0.189), rgba(181, 216, 224, 0.079),white , white );
+}
+
+#abtop{
+    background-image: linear-gradient(to right, rgba(107, 197, 222, 0.074),rgba(159, 211, 225, 0.189), rgba(181, 216, 224, 0.079),white , white );
+}
+
+.abinfo{
+    height: 100%;
+    width: 60%;
+}
+
+.abcont0{
+    margin-top: 3rem;
+    height: 20%;
+    width: 90%;
+}
+
+.abcont1{
+    height: 14%;
+    width: 90%;
+}
+
+.abcont2{
+    height: 25%;
+    width: 90%;
+}
+
+.abheading{
+    
+    height: 1.5rem;
+    width: 100%;
+    font-size: 19px;
+    font-weight: 600;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: rgb(83, 82, 82);
+}
+
+.abdescription{
+    
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 3rem;
+    color: rgb(83, 82, 82);
+}
+
+.abimg{
+    height: 95%;
+    width: 48%; 
+}
+
+.abimg>img{
+    height: 90%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/******************************** about us end ********************************/
+
+
+/********************************* contact us start *********************************/
+.contact{
+
+    height: 100vh;
+    width: 100vw;
+    padding-top: 5rem;
+}
+
+.subcontact{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    background-image: linear-gradient(to left, rgba(107, 197, 222, 0.074),rgba(159, 211, 225, 0.189), rgba(181, 216, 224, 0.079),white , white );
+}
+
+.con-leftdiv{
+    height: 100%;
+    width: 50%;
+}
+
+.con-leftdiv>img{
+    height: 90%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.con-rightdiv{
+    height: 93%;
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+}
+  
+input[type=submit] {
+    background-color: #25ca2b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+  
+input[type=submit]:hover {
+    background-color: #1fb424;
+}
+
+/********************************* contact us end *********************************/
+
+/********************************** footer start **********************************/
+.footer{
+    height: 41vh;
+    width: 100vw;
+    background-color: rgb(73, 86, 231);
+    color: aliceblue;
+}
+
+.topfooter{
+    margin-top: 5px;
+}
+
+.footcontainer{
+    height: 35vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomfooter{
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.t1>img{
+    height: 8rem;
+    width: 8rem;
+    margin-bottom: 10px;
+}
+
+.t1{
+    height: 15rem;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+#foothead{
+    font-size: x-large;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.t1>p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.t2{
+    height: 15rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.t2>ul{
+    list-style-type: none;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    align-items: center;
+}
+
+.t2>ul>li>a{
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 2;
+}
+
+.t2>ul>li:hover{
+    scale: 1.1;
+}
+
+.footsubhed-1{
+    margin-top: 2rem;
+    margin-left: -2rem;
+    font-size: large;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footsubhed-2{
+    margin-top: 2rem;
+    margin-left: -8rem;
+    font-size: large;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footsubhed-3{
+    margin-top: 2rem;
+    font-size: large;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.t3{
+    height: 15rem;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.t3>ul{
+    list-style-type: none;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    align-items: center;
+}
+
+.t3>ul>li:hover{
+    scale: 1.1;
+}
+
+.t3>ul>li>a{
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 2;
+}
+
+.t4{
+    height: 15rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    margin-top: 2rem;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    
+}
+
+.footline{
+    height: 1px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#line{
+    height: 1px;
+    width: 70vw;
+    background-color: rgb(133, 135, 233);
+}
+
+.icon>a>i{
+    scale: 1.5;
+    color: aliceblue;
+}
+
+.icon>a>i:hover{
+    scale: 2;
+    text-shadow: 0px 0px 5px whitesmoke;
+}
+
+.bottomfooter>p{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+/********************************** footer end **********************************/
